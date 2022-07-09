@@ -1,0 +1,149 @@
+:root{
+    /*Primary*/
+       --first-background: #1C1C1C;
+    --second-background: #23252C;
+    --third-background: #1A1B21;
+
+    /*Font-size*/
+    --para: 10.24px;
+    --title: 25px;
+  }
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+.digital-preview{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--first-background);
+    /* position: fixed; */
+}
+
+.digital-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 1000px;
+    max-width: 550px;
+    border-radius: 12px;
+    background-color: var(--second-background);
+}
+
+.digital-image{
+    height: 100%;
+    width: 70%;
+    background-image: url(./BeautyPlus_20180119191116_save-min.jpg);    
+    background-size: cover;
+    border-radius: 12px 12px 12px 12px;   
+}
+
+.digital-body{
+    height: 200%;
+    width: 70%;
+    background-color: var(--third-background);
+}
+
+.digital-hero{
+   text-align: center;    
+}
+
+.digital-hero h2{
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.digital-hero p{
+    color: #F3BF99;
+    font-size: 12.8px;
+    margin-top: 5px;
+}
+
+.digital-link{
+    display: flex;
+    flex-direction: auto auto;
+    justify-content: space-around;
+    margin: 3px 50px;
+    padding: 10px;
+}
+
+.primary-button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    display: flex;
+}
+
+.icon{
+    font-size: 15px;
+}
+
+.digital-text, .digital-footer{
+    margin: 2px 20px;
+    line-height: 20px;
+}
+
+.digital-para{
+    color: #F5F5F5;
+    font-size: 16px;
+    margin: 15px 0px;
+    font-weight: 700;
+}
+
+.digital-para p{
+    color: #DCDCDC;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.digital-footer{
+    background-color: #161619;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.digital-footer .icones{
+    font-size: 40px;
+    margin: 0px 5px;    
+}
+
+.attributioz{
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .digital-preview{
+        height: 200%;
+        width: 100%;
+    }
+    
+    .digital-cart{
+        height: 200%;
+        width: 70%;
+    }
+    
+    .digital-image{
+        height: 200px;
+        width: 100%;
+    }
+
+    .digital-body{
+        width: 100%;
+        height: 60%;
+        padding: 18px;
+    }
+
+  
+}
+
